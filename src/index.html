@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>wordpress theme example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main-tailwind.css" />
+  </head>
+  <body>
+
+    <!-- start: main header -->
+
+    <header>
+      <div class="relative mx-auto max-w-7xl py-4 px-4 lg:px-8 flex flex-col lg:flex-row justify-between align-center">
+        <h1 class="text-5xl pb-4 lg:pb-0 font-extrabold tracking-tight text-purple-900">Hello World!</h1>
+
+        <!-- start: main menu -->
+        <nav>
+          <ul class="main-menu   flex flex-col gap-1 lg:gap-2 lg:flex-row">
+            <li class="menu-item   leading-10"><a href="#" class="block px-4 lg:py-2 rounded-md hover:bg-gray-200">link</a></li>
+            <li class="menu-item   leading-10"><a href="#" class="block px-4 lg:py-2 rounded-md hover:bg-gray-200">link</a></li>
+            <li class="menu-item   leading-10"><a href="#" class="block px-4 lg:py-2 rounded-md hover:bg-gray-200">link</a></li>
+            <li class="menu-item   leading-10"><a href="#" class="block px-4 lg:py-2 rounded-md hover:bg-gray-200">link</a></li>
+            <li class="menu-item   leading-10"><a href="#" class="block px-4 lg:py-2 rounded-md bg-purple-900 hover:bg-gray-200 text-white hover:text-black">call-to-action</a></li>
+          </ul>
+        </nav>
+        <!-- end: main menu -->
+
+        <div class="absolute block lg:hidden right-4 top-4 w-10 h-10 flex place-content-center rounded-xl leading-0 bg-purple-100 hover:bg-purple-900 text-2xl hover:text-white">×</div>
+      </div>
+    </header>
+
+    <!-- end: main header -->
+    <!-- start: highlight -->
+    
+    <article class="h-fit flex flex-col lg:flex-row bg-purple-900 text-white">
+
+      <div class="lg:w-1/2 h-[40vh] lg:h-[60vh]">
+        <img src="https://images.unsplash.com/photo-1645060815414-15bb7dfea21b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="h-full w-full object-cover object-center" alt="">
+      </div>
+
+      <div class="mr-auto lg:max-w-[40rem] lg:w-1/2 h-[40vh] lg:h-[60vh] p-4 lg:p-8 flex flex-col justify-center">
+        <p class="uppercase font-bold tracking-tight text-sm text-gray-400">Fresh and cool</p>
+        <h2 class="text-3xl font-bold mb-4">big title here</h2>
+        <div class="description">
+          <p class="max-w-[40rem] text-gray-300 mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam veritatis esse, molestias culpa asperiores vero quia minus, autem, architecto nostrum pariatur deleniti ducimus magni. Neque debitis deserunt quaerat?</p>
+        </div>
+        <p><a href="#"><button class="px-4 py-2 border-2 rounded-md hover:bg-gray-200 hover:border-transparent hover:text-black transition-all">read more…</button></a></p>
+      </div>
+
+    </article>
+
+    <!-- end: highlight -->
+    <!-- start: preface area -->
+
+    <section class="max-w-7xl mx-auto py-20 px-4 lg:px-8">
+
+      <div class="w-full py-20 bg-gray-100 rounded-md text-center">
+        preface area
+      </div>
+
+    </section>
+
+    <!-- end: preface area -->
+    <!-- start: trending -->
+
+    <article class="max-w-7xl mx-auto py-20 px-4 lg:px-8">
+
+      <div class=" divide-y divide-y-1 divide-gray-800">
+
+        <!-- start: article header -->
+
+        <header class="flex justify-between items-baseline">
+          <h2 class="text-3xl font-bold tracking-tight mb-2">trending now</h2>
+          <p><a href="#"><button class="px-2 py-0 rounded-md hover:bg-gray-200 text-purple-900 transition-all">all articles</button></a></p>
+        </header>
+
+        <!-- end: article header -->
+        <!-- start: article gallery -->
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-white pt-8">
+
+          <!-- start: article card -->
+
+          <a class="w-full col-span-2" href="#"><article class="relative group h-80 p-4 lg:p-8 hover:pb-10 transition-all duration-300 flex flex-col justify-end">
+            <p class="mb-2 uppercase font-bold tracking-tight text-sm text-gray-400">Category</p>
+            <h2 class="text-2xl font-bold mb-0">medium title here</h2>
+            <p class="absolute bottom-0 right-4 lg:right-8 opacity-0 transition-all duration-500">read more…</p>
+            <div class="absolute -z-10 w-full h-full inset-0 overflow-hidden rounded-md">
+              <div class="absolute z-10 w-full h-full inset-0 bg-gradient-to-b from-transparent via-transparent to-black"></div>
+              <img src="https://images.unsplash.com/photo-1645060815414-15bb7dfea21b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="h-full w-full object-cover object-center group-hover:scale-125 transition-transform duration-300" alt="">
+            </div>
+          </article></a>
+
+          <!-- end: article card -->
+            
+          <a class="w-full" href="#"><article class="relative group h-80 p-4 lg:p-8 hover:pb-10 transition-all duration-300 flex flex-col justify-end">
+            <p class="mb-2 uppercase font-bold tracking-tight text-sm text-gray-400">Category</p>
+            <h2 class="text-2xl font-bold mb-0">medium title here</h2>
+            <p class="absolute bottom-0 right-4 lg:right-8 opacity-0 transition-all duration-500">read more…</p>
+            <div class="absolute -z-10 w-full h-full inset-0 overflow-hidden rounded-md">
+              <div class="absolute z-10 w-full h-full inset-0 bg-gradient-to-b from-transparent via-transparent to-black"></div>
+              <img src="https://images.unsplash.com/photo-1645060815414-15bb7dfea21b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="h-full w-full object-cover object-center group-hover:scale-125 transition-transform duration-300" alt="">
+            </div>
+          </article></a>
+            
+          <a class="w-full" href="#"><article class="relative group h-80 p-4 lg:p-8 hover:pb-10 transition-all duration-300 flex flex-col justify-end">
+            <p class="mb-2 uppercase font-bold tracking-tight text-sm text-gray-400">Category</p>
+            <h2 class="text-2xl font-bold mb-0">medium title here</h2>
+            <p class="absolute bottom-0 right-4 lg:right-8 opacity-0 transition-all duration-500">read more…</p>
+            <div class="absolute -z-10 w-full h-full inset-0 overflow-hidden rounded-md">
+              <div class="absolute z-10 w-full h-full inset-0 bg-gradient-to-b from-transparent via-transparent to-black"></div>
+              <img src="https://images.unsplash.com/photo-1645060815414-15bb7dfea21b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="h-full w-full object-cover object-center group-hover:scale-125 transition-transform duration-300" alt="">
+            </div>
+          </article></a>
+            
+          <a class="w-full" href="#"><article class="relative group h-80 p-4 lg:p-8 hover:pb-10 transition-all duration-300 flex flex-col justify-end">
+            <p class="mb-2 uppercase font-bold tracking-tight text-sm text-gray-400">Category</p>
+            <h2 class="text-2xl font-bold mb-0">medium title here</h2>
+            <p class="absolute bottom-0 right-4 lg:right-8 opacity-0 transition-all duration-500">read more…</p>
+            <div class="absolute -z-10 w-full h-full inset-0 overflow-hidden rounded-md">
+              <div class="absolute z-10 w-full h-full inset-0 bg-gradient-to-b from-transparent via-transparent to-black"></div>
+              <img src="https://images.unsplash.com/photo-1645060815414-15bb7dfea21b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="h-full w-full object-cover object-center group-hover:scale-125 transition-transform duration-300" alt="">
+            </div>
+          </article></a>
+            
+          <a class="w-full" href="#"><article class="relative group h-80 p-4 lg:p-8 hover:pb-10 transition-all duration-300 flex flex-col justify-end">
+            <p class="mb-2 uppercase font-bold tracking-tight text-sm text-gray-400">Category</p>
+            <h2 class="text-2xl font-bold mb-0">medium title here</h2>
+            <p class="absolute bottom-0 right-4 lg:right-8 opacity-0 transition-all duration-500">read more…</p>
+            <div class="absolute -z-10 w-full h-full inset-0 overflow-hidden rounded-md">
+              <div class="absolute z-10 w-full h-full inset-0 bg-gradient-to-b from-transparent via-transparent to-black"></div>
+              <img src="https://images.unsplash.com/photo-1645060815414-15bb7dfea21b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="h-full w-full object-cover object-center group-hover:scale-125 transition-transform duration-300" alt="">
+            </div>
+          </article></a>
+
+          <div class="sm:col-span-2 lg:col-span-3 text-center py-4">
+            <button class="px-4 py-2 border-2 rounded-md bg-purple-900 hover:bg-gray-200 text-white hover:text-black transition-all">read more…</button></a>
+          </div>
+
+        </div>
+
+        <!-- end: article gallery -->
+
+      </div>
+    </article>
+
+    <!-- end: trending -->
+    <!-- start: main content area -->
+
+    <main>
+      <article class="article-content py-20">
+        
+        <!-- start: main content header -->
+
+        <header class="relative mb-20">
+
+          <div class="max-w-5xl mx-auto h-[75vh] px-4 lg:px-8 flex flex-col justify-end">
+            <p class="mb-2 uppercase font-bold tracking-tight text-sm text-gray-400">Category</p>
+            <h1 class="w-1/2 text-7xl font-bold tracking-tight pb-10 text-white">article title</h1>
+          </div>
+
+          <div class="absolute -z-10 w-full h-full inset-0">
+            <div class="absolute z-10 w-full h-full inset-0 bg-gradient-to-b from-transparent via-transparent to-black"></div>
+            <img src="https://images.unsplash.com/photo-1645060815414-15bb7dfea21b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="h-full w-full object-cover object-center" alt="">
+          </div>
+
+        </header>
+
+        <!-- start: end content header -->
+
+        <article class="article-body max-w-5xl mx-auto px-4 lg:px-8">
+
+          <!-- start: Gutenberg content -->
+
+          <h2>Principles For Better UI Typography.</h2>
+
+          <p id="c0e2">A huge amount of children grow up thinking they’re less creative and a small percentage of these end up as designers; Constantly worrying about colors, typography, layouts, and tattoos.</p>
+          
+          <p id="1eda">If you didn’t spend 4 years in design school, then at some point in an empty canvas, you’ve questioned your career as a designer. I learned that this frustration mostly boiled down to one single variable&nbsp;<strong>Typography.</strong></p>
+          
+          <p id="913f">So I set out to do a&nbsp;<a href="https://twitter.com/vick_OnRails/status/1123367845826650112/" rel="noreferrer noopener" target="_blank">30days of Typography</a>; to explore,&nbsp;<strong>in white and black</strong>, the combination of type and learn first-hand principles of what makes great typography in UI design. I wanted to keep this as simple as possible, so I stuck to a few fonts; Noto Sans and Noto sans serif. No color, no crazy stuff, just plain ol, type.</p>
+          
+          <p id="1dd1"><strong>Result</strong>: I was blown away by a few things. I share them with you in this post.</p>
+          
+          <h3 id="4cb1">1. Pick one type.</h3>
+          
+          <p id="a1f5">The reason you would want to pick more than one Type is contrast. You want the heading to look different and a few other sections to look unique. But is that necessary? A single type has a lot of properties to create contrast: <strong>Weight</strong>, <strong>Capitalization</strong>, <strong>Style</strong>, <strong>Color</strong>, <strong>Size</strong>. These properties also help you stick to another rule of typography: <strong>Consistency.</strong></p>
+          
+          <p id="8989">You don’t want to distract the user. Every mental effort they put into thinking about how beautiful or different your heading is, makes it difficult for them to focus on their tasks. In information heavy UIs, the goal is not to excite but to communicate. Good communication is consistent. There are other reasons to stick to one type: <strong>font file size</strong>, <strong>cost</strong>, <strong>branding</strong>, etc.</p>
+          
+          <figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="661" src="https://images.unsplash.com/photo-1645060815414-15bb7dfea21b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" class="wp-image-15"><figcaption>Day 7. Using just one Type Noto Sans. Contrasting the heading and body. (Don’t try this at work!)</figcaption></figure>
+          
+          <h3 id="03db">Consider these when picking a Type.</h3>
+          
+          <ol><li><strong>Available styles</strong>. In order to have a larger box to play with, you should pick a font with many styles (Like Helvetica, Lato, etc).</li><li><strong>Readability</strong>: Try paying a lot of attention to how well the font displays a large amount of information. Most times, you want specifically look at the x-height and 1I test. More about that in&nbsp;<a rel="noreferrer noopener" href="https://twitter.com/vick_OnRails/status/1049376004156870656" target="_blank">this tweet.</a></li><li><strong>Motive</strong>: Typography in landing pages can’t be the same with information-heavy sites. After accessing the goal of the text, and the brand guidelines, you would want to choose a type accordingly.</li></ol>
+          
+          <h3>2. Characters per line.</h3>
+          
+          <blockquote class="wp-block-quote"><p>Anything from 45 to 75 characters is widely regarded as a satisfactory length of line for a single-column page set in a serifed text face in a text size. The 66-character line (counting both letters and spaces) is widely regarded as ideal. For multiple column work, a better average is 40 to 50 characters.</p><cite>The Elements of Typographic Style Applied to the Web</cite></blockquote>
+          
+          <p>As strange as this might sound, it came up every time. Whenever my typography looks weird, I can get away by just reducing the characters per line.</p>
+          
+          <figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="569" src="https://images.unsplash.com/photo-1645060815414-15bb7dfea21b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" /><figcaption>Day 27. About 60 characters per line. It would look more awkward if I made the lines longer.</figcaption></figure>
+          
+          <p id="a200">Text with very few characters per line makes the reader constantly jump and reorient from line to line. A lot of characters per line make the text intimidating and hard to read.</p>
+          
+          <p id="7e94">The characters per line should also vary as the font size changes. Small font sizes can look odd when adhering to this principle, so you could blow up your font size to come up with truly natural-looking characters per line like&nbsp;<a href="https://medium.com/u/504c7870fdb6?source=post_page-----fac39e75f8e7-----------------------------------" rel="noreferrer noopener" target="_blank">Medium</a>.</p>
+          
+          <p id="bac8">But like everything else, you should experiment to see what works for you.</p>
+          
+          <h3>3. Pay attention to line height</h3>
+          
+          <p>Line height (leading) is the vertical space between two paragraphs in a text.</p>
+          
+          <blockquote class="wp-block-quote"><p>For most text, the optimal line spacing is between 120% and 145% of the point size.</p><cite>Butterick’s Practical Typography.</cite></blockquote>
+          
+          <p>This little detail is a large determinant of a readable text. A small line-height makes the lines vertically close together and hard separate visually. Too large line-height make the lines too far apart vertically and hard to follow through.</p>
+          
+          <figure class="wp-block-gallery has-nested-images columns-default is-cropped">
+
+            <figure class="wp-block-image size-large"><img loading="lazy" width="600" height="300" data-id="19"  src="https://images.unsplash.com/photo-1645060815414-15bb7dfea21b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" /></figure>
+          
+            <figure class="wp-block-image size-large"><img loading="lazy" width="600" height="300" data-id="20"  src="https://images.unsplash.com/photo-1645060815414-15bb7dfea21b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" /></figure>
+          
+            <figure class="wp-block-image size-large"><img loading="lazy" width="600" height="300" data-id="21"  src="https://images.unsplash.com/photo-1645060815414-15bb7dfea21b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" /></figure>
+
+            <figcaption class="blocks-gallery-caption">Left: line-height of 1.0. Center: line-height of 1.25. Right: line-height of 1.5.</figcaption>
+
+          </figure>
+          
+          <p>You’ll know when you hit the optimal line-height; the text block feels unified and stands apart from the others without being too condensed.</p>
+          
+          <p>On the web and some CSS centered environments, line-height is set with the line-height property. You would normally set it relative to the font size like so.</p>
+          
+          <pre class="wp-block-code"><code>.paragraph {
+  font: 16px;
+  line-height: 1.35;
+}</code></pre>
+          
+          <p>Setting the line-height without units (px, etc) allows the line height to stay constant (1.35 times the font size) if the font size changes.</p>
+          
+          <p>It should also interest you that the larger the font size, the smaller the line height. This is not a golden rule, but it looks better.</p>
+
+          <!-- end: Gutenberg content -->
+
+        </article>
+
+      </article>
+    </main>
+
+    <!-- end: main content area -->
+    <!-- start: related -->
+
+    <article class="max-w-7xl mx-auto py-20 px-4 lg:px-8">
+
+      <div class=" divide-y divide-y-1 divide-gray-800">
+
+        <!-- start: article header -->
+
+        <header class="flex justify-between items-baseline">
+          <h2 class="text-3xl font-bold tracking-tight mb-2">related articles</h2>
+          <p><a href="#"><button class="px-2 py-0 rounded-md hover:bg-gray-200 text-purple-900 transition-all">all articles</button></a></p>
+        </header>
+
+        <!-- end: article header -->
+        <!-- start: article gallery -->
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-white pt-8">
+
+          <!-- start: article card -->
+
+          <a class="w-full" href="#"><article class="relative group h-80 p-4 lg:p-8 hover:pb-10 transition-all duration-300 flex flex-col justify-end">
+            <p class="mb-2 uppercase font-bold tracking-tight text-sm text-gray-400">Category</p>
+            <h2 class="text-2xl font-bold mb-0">medium title here</h2>
+            <p class="absolute bottom-0 right-4 lg:right-8 opacity-0 transition-all duration-500">read more…</p>
+            <div class="absolute -z-10 w-full h-full inset-0 overflow-hidden rounded-md">
+              <div class="absolute z-10 w-full h-full inset-0 bg-gradient-to-b from-transparent via-transparent to-black"></div>
+              <img src="https://images.unsplash.com/photo-1645060815414-15bb7dfea21b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="h-full w-full object-cover object-center group-hover:scale-125 transition-transform duration-300" alt="">
+            </div>
+          </article></a>
+
+          <!-- end: article card -->
+            
+          <a class="w-full" href="#"><article class="relative group h-80 p-4 lg:p-8 hover:pb-10 transition-all duration-300 flex flex-col justify-end">
+            <p class="mb-2 uppercase font-bold tracking-tight text-sm text-gray-400">Category</p>
+            <h2 class="text-2xl font-bold mb-0">medium title here</h2>
+            <p class="absolute bottom-0 right-4 lg:right-8 opacity-0 transition-all duration-500">read more…</p>
+            <div class="absolute -z-10 w-full h-full inset-0 overflow-hidden rounded-md">
+              <div class="absolute z-10 w-full h-full inset-0 bg-gradient-to-b from-transparent via-transparent to-black"></div>
+              <img src="https://images.unsplash.com/photo-1645060815414-15bb7dfea21b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="h-full w-full object-cover object-center group-hover:scale-125 transition-transform duration-300" alt="">
+            </div>
+          </article></a>
+
+        </div>
+
+        <!-- end: article gallery -->
+
+      </div>
+    </article>
+
+    <!-- end: trending -->
+    <!-- start: postscript area -->
+
+    <section class="max-w-7xl mx-auto py-20 px-4 lg:px-8">
+
+      <div class="w-full py-20 bg-gray-100 rounded-md text-center">
+        postscript area
+      </div>
+      
+    </section>
+
+    <!-- end: postscript area -->
+    <!-- start: footer -->
+
+    <footer class="bg-purple-900 text-white">
+
+      <div class="min-h-[50vh] max-w-7xl mx-auto py-20">
+
+        <div class="px-4 lg:px-8 text-center">
+          footer area
+        </div>
+
+      </div>
+
+    </footer>
+
+    <!-- end: footer -->
+
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
