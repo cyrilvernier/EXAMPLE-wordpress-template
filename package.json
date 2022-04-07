@@ -6,6 +6,7 @@
     "clean:output": "rimraf dist",
     "dev": "parcel src/index.html",
     "build": "npm run clean:output && parcel build src/index.html --no-optimize --public-url '.'",
+    "wp-build": "parcel build src/index.html --dist-dir '../wordpress/wp-content/themes/hello-world' --no-optimize --public-url '.'",
     "watch": "parcel watch src/index.html"
   },
   "repository": {
