@@ -1,7 +1,7 @@
 {
-  "name": "s6-parcel-starter",
+  "name": "wp-template-example",
   "version": "1.0.0",
-  "description": "Parcel starter for s6@eikon",
+  "description": "Template example for WordPress",
   "scripts": {
     "clean:output": "rimraf dist",
     "dev": "parcel src/index.html",
@@ -11,21 +11,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:cyrilvernier/parcel-starter.git"
+    "url": "git@github.com:cyrilvernier/wp-template-example.git"
   },
   "keywords": [],
-  "author": "eikon frontend development team",
-  "license": "ISC",
-  "homepage": "https://github.com/cyrilvernier/parcel-starter#readme",
+  "author": "Cyril Vernier @cyrilvernier",
+  "homepage": "https://github.com/cyrilvernier/wp-template-example",
   "parcel-namer-rewrite": {
     "rules": {
       "(.*)\\.(css)": "css/$1.$2",
       "(.*)\\.(js)": "js/$1.$2",
       "(.*)\\.(woff|woff2?)": "font/$1.$2",
-      "(.*)\\.(svg|png|gif|jpg|webp)": "img/$1.$2"
+      "(.*)\\.(mp4|ogg|webm)": "video/$1.$2",
+      "(.*)\\.(svg|png|gif|jpg|jpeg|webp)": "img/$1.{hash}.$2"
     },
     "silent": true,
-    "developmentDisable": true
+    "development": {
+      "disable": false
+    }
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.3.1",
@@ -42,6 +44,7 @@
     "tailwindcss": "^3.0.23"
   },
   "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.2",
     "flickity": "^2.3.0"
   }
 }
