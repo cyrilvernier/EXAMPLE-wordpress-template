@@ -8,54 +8,75 @@
 
 @layer base {
 
-    body {
-        @apply leading-6 lg:leading-8 text-base lg:text-xl;
-    }
+  body {
+    @apply leading-6 lg:leading-8 text-base lg:text-xl text-slate-900;
+  }
 
-    h2 {
-        @apply text-3xl font-bold tracking-tight mb-6 lg:mb-8;
-    }
+  h2 {
+    @apply text-3xl font-bold tracking-tight mb-6 lg:mb-8;
+  }
 
-    h3 {
-        @apply text-2xl font-bold tracking-tight mb-6 mt-12;
-    }
+  h3 {
+    @apply text-2xl font-bold tracking-tight mb-6 mt-12;
+  }
 
-    h4 {
-        @apply text-xl font-bold tracking-tight mb-4 mt-8;
-    }
+  h4 {
+    @apply text-xl font-bold tracking-tight mb-4 mt-8;
+  }
 
-    p, ul, ol, li, pre, figure, blockquote {
-        @apply mb-6;
-    }
+  p, ul, ol, li, pre, figure, blockquote {
+    @apply mb-6;
+  }
 
-    figcaption {
-        @apply text-sm;
-    }
+  .article-body a {
+    @apply border-b-[1px] border-dotted border-slate-500;
+  }
 
-    blockquote {
-        @apply pl-4 lg:pl-8 border-l-4 border-purple-900 py-4;
-    }
+  .article-body ul {
+    @apply list-disc;
+  }
 
-    blockquote p {
-        @apply text-xl lg:text-4xl leading-8 lg:leading-[3rem] italic font-serif;
-    }
+  .article-body ol {
+    @apply list-decimal;
+  }
 
+  .article-body li {
+    @apply ml-6 pl-1;
+  }
+
+  figcaption {
+    @apply text-sm;
+  }
+
+  blockquote {
+    @apply pl-4 lg:pl-8 border-l-4 border-slate-500 py-4;
+  }
+
+  blockquote p {
+    @apply text-xl lg:text-4xl leading-8 lg:leading-[3rem] italic font-serif;
+  }
+
+}
+
+
+.article-gallery .article-item {
+  @apply first:sm:col-span-2;
 }
 
 /* ------ WP Gutenberg blocks overrides ------- */
 
 .wp-block-code {
-    @apply bg-gray-100 p-4;
+  @apply bg-gray-100 p-4;
 }
 
 .wp-block-gallery {
-    @apply flex flex-wrap justify-between gap-0;
+  @apply flex flex-wrap justify-between gap-0;
 }
 
 .wp-block-gallery .wp-block-image {
-    @apply w-full lg:w-4/12 box-border shrink mb-0;
+  @apply w-full lg:w-4/12 box-border shrink mb-0;
 }
 
 .wp-block-gallery .blocks-gallery-caption {
-    @apply basis-full;
+  @apply basis-full;
 }
