@@ -1,2 +1,2 @@
 # WordPress template example
- WordPress simple template example made w/ Tailwind CSS
+ WordPress simple template example made w/ Tailwind CSS and 🧡
