@@ -1,6 +1,6 @@
 {
   "name": "wp-template-example",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Template example for WordPress",
   "scripts": {
     "clean:output": "rimraf dist",
@@ -18,11 +18,12 @@
   "homepage": "https://github.com/cyrilvernier/wp-template-example",
   "parcel-namer-rewrite": {
     "rules": {
-      "(.*)\\.(css)": "css/$1.$2",
-      "(.*)\\.(js)": "js/$1.$2",
-      "(.*)\\.(woff|woff2?)": "font/$1.$2",
+      "(.*)\\.(css)": "css/$1{.hash}.$2",
+      "(.*)\\.(js)": "js/$1{.hash}.$2",
+      "(.*)\\.(ttf|otf|woff|woff2?)": "font/$1.$2",
+      "(.*)\\.(mp3)": "audio/$1.$2",
       "(.*)\\.(mp4|ogg|webm)": "video/$1.$2",
-      "(.*)\\.(svg|png|gif|jpg|jpeg|webp)": "img/$1.{hash}.$2"
+      "(.*)\\.(svg|png|gif|jpg|jpeg|webp)": "img/$1{.hash}.$2"
     },
     "silent": true,
     "development": {
